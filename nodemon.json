@@ -1,0 +1,12 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "ignore": ["src/**/*.spec.ts", "node_modules", "dist"],
+  "exec": "nest build && node dist/main",
+  "env": {
+    "CHOKIDAR_USEPOLLING": "true",
+    "CHOKIDAR_INTERVAL": "1000"
+  },
+  "delay": "1000"
+}
+
